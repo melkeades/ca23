@@ -1,0 +1,170 @@
+{
+    "sourceFile": "vite.config.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 38,
+            "patches": [
+                {
+                    "date": 1674035438800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1674036973748,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n \r\n export default defineConfig({\r\n   plugins: [vitePugPlugin()],\r\n \r\n+  root: 'src',\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674037269302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,13 @@\n \r\n export default defineConfig({\r\n   plugins: [vitePugPlugin()],\r\n \r\n-  root: 'src',\r\n+build: {\r\n+    rollupOptions: {\r\n+        input: './src/index.html'\r\n+    }\r\n+}\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674037526621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,13 +3,15 @@\n \r\n export default defineConfig({\r\n   plugins: [vitePugPlugin()],\r\n \r\n-build: {\r\n+  build: {\r\n     rollupOptions: {\r\n-        input: './src/index.html'\r\n-    }\r\n-}\r\n+      input: {\r\n+        app: './src/index.html',\r\n+      },\r\n+    },\r\n+  },\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674037541209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n export default defineConfig({\r\n   plugins: [vitePugPlugin()],\r\n \r\n-  build: {\r\n+  dev: {\r\n     rollupOptions: {\r\n       input: {\r\n         app: './src/index.html',\r\n       },\r\n"
+                },
+                {
+                    "date": 1674037574606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n \r\n export default defineConfig({\r\n   plugins: [vitePugPlugin()],\r\n \r\n-  dev: {\r\n+  build: {\r\n     rollupOptions: {\r\n       input: {\r\n         app: './src/index.html',\r\n       },\r\n"
+                },
+                {
+                    "date": 1674037826378,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n         app: './src/index.html',\r\n       },\r\n     },\r\n   },\r\n+  root: 'src',\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674037957208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,16 +3,8 @@\n \r\n export default defineConfig({\r\n   plugins: [vitePugPlugin()],\r\n \r\n-  build: {\r\n-    rollupOptions: {\r\n-      input: {\r\n-        app: './src/index.html',\r\n-      },\r\n-    },\r\n-  },\r\n-  root: 'src',\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674040473821,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { defineConfig } from 'vite'\r\n \r\n export default defineConfig({\r\n   plugins: [vitePugPlugin()],\r\n-\r\n+  root: 'src',\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674040716395,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,15 @@\n import { defineConfig } from 'vite'\r\n \r\n export default defineConfig({\r\n   plugins: [vitePugPlugin()],\r\n-  root: 'src',\r\n   server: {\r\n+    build: {\r\n+      rollupOptions: {\r\n+        input: {\r\n+          app: './index.html', // default\r\n+        },\r\n+      },\r\n+    },\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674040744712,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,15 +2,15 @@\n import { defineConfig } from 'vite'\r\n \r\n export default defineConfig({\r\n   plugins: [vitePugPlugin()],\r\n-  server: {\r\n-    build: {\r\n-      rollupOptions: {\r\n-        input: {\r\n-          app: './index.html', // default\r\n-        },\r\n+  build: {\r\n+    rollupOptions: {\r\n+      input: {\r\n+        app: './index.html', // default\r\n       },\r\n     },\r\n+  },\r\n+  server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674040760273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n   plugins: [vitePugPlugin()],\r\n   build: {\r\n     rollupOptions: {\r\n       input: {\r\n-        app: './index.html', // default\r\n+        app: './src/index.html', // default\r\n       },\r\n     },\r\n   },\r\n   server: {\r\n"
+                },
+                {
+                    "date": 1674040775610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,17 @@\n+import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n+import { defineConfig } from 'vite'\r\n+\r\n+export default defineConfig({\r\n+  plugins: [vitePugPlugin()],\r\n+  build: {\r\n+    rollupOptions: {\r\n+      input: {\r\n+        app: './src/index.html', // default\r\n+      },\r\n+    },\r\n+  },\r\n+  root: './src'\r\n+  server: {\r\n+    // host: true,\r\n+  },\r\n+})\r\n"
+                },
+                {
+                    "date": 1674040814680,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,32 +2,16 @@\n import { defineConfig } from 'vite'\r\n \r\n export default defineConfig({\r\n   plugins: [vitePugPlugin()],\r\n-  build: {\r\n-    rollupOptions: {\r\n-      input: {\r\n-        app: './src/index.html', // default\r\n-      },\r\n-    },\r\n-  },\r\n-  root: './src'\r\n+  //   build: {\r\n+  //     rollupOptions: {\r\n+  //       input: {\r\n+  //         app: './src/index.html', // default\r\n+  //       },\r\n+  //     },\r\n+  //   },\r\n+  //   root: './src',\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n-import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n-import { defineConfig } from 'vite'\r\n-\r\n-export default defineConfig({\r\n-  plugins: [vitePugPlugin()],\r\n-  build: {\r\n-    rollupOptions: {\r\n-      input: {\r\n-        app: './src/index.html', // default\r\n-      },\r\n-    },\r\n-  },\r\n-  server: {\r\n-    // host: true,\r\n-  },\r\n-})\r\n"
+                },
+                {
+                    "date": 1674041083416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,12 @@\n-import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n+// import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n import { defineConfig } from 'vite'\r\n+import pugPlugin from 'vite-plugin-pug'\r\n \r\n export default defineConfig({\r\n-  plugins: [vitePugPlugin()],\r\n+  plugins: [pugPlugin(options, locals)],\r\n+  //\r\n+  //   plugins: [vitePugPlugin()],\r\n   //   build: {\r\n   //     rollupOptions: {\r\n   //       input: {\r\n   //         app: './src/index.html', // default\r\n"
+                },
+                {
+                    "date": 1674041147228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n import { defineConfig } from 'vite'\r\n import pugPlugin from 'vite-plugin-pug'\r\n \r\n export default defineConfig({\r\n-  plugins: [pugPlugin(options, locals)],\r\n+  plugins: [pugPlugin()],\r\n   //\r\n   //   plugins: [vitePugPlugin()],\r\n   //   build: {\r\n   //     rollupOptions: {\r\n"
+                },
+                {
+                    "date": 1674041470763,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n // import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n import { defineConfig } from 'vite'\r\n import pugPlugin from 'vite-plugin-pug'\r\n-\r\n+const options = { pretty: true } // FIXME: pug pretty is deprecated!\r\n+const locals = { name: 'My Pug' }\r\n export default defineConfig({\r\n-  plugins: [pugPlugin()],\r\n-  //\r\n+  plugins: [pugPlugin(options, locals)], //\r\n   //   plugins: [vitePugPlugin()],\r\n   //   build: {\r\n   //     rollupOptions: {\r\n   //       input: {\r\n"
+                },
+                {
+                    "date": 1674041547422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,17 +4,17 @@\n const options = { pretty: true } // FIXME: pug pretty is deprecated!\r\n const locals = { name: 'My Pug' }\r\n export default defineConfig({\r\n   plugins: [pugPlugin(options, locals)], //\r\n-  //   plugins: [vitePugPlugin()],\r\n-  //   build: {\r\n-  //     rollupOptions: {\r\n-  //       input: {\r\n-  //         app: './src/index.html', // default\r\n-  //       },\r\n-  //     },\r\n-  //   },\r\n-  //   root: './src',\r\n+  plugins: [vitePugPlugin()],\r\n+  build: {\r\n+    rollupOptions: {\r\n+      input: {\r\n+        app: './src/index.html', // default\r\n+      },\r\n+    },\r\n+  },\r\n+  root: './src',\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674041566015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,17 +4,17 @@\n const options = { pretty: true } // FIXME: pug pretty is deprecated!\r\n const locals = { name: 'My Pug' }\r\n export default defineConfig({\r\n   plugins: [pugPlugin(options, locals)], //\r\n-  plugins: [vitePugPlugin()],\r\n-  build: {\r\n-    rollupOptions: {\r\n-      input: {\r\n-        app: './src/index.html', // default\r\n-      },\r\n-    },\r\n-  },\r\n-  root: './src',\r\n+  //   plugins: [vitePugPlugin()],\r\n+  //   build: {\r\n+  //     rollupOptions: {\r\n+  //       input: {\r\n+  //         app: './src/index.html', // default\r\n+  //       },\r\n+  //     },\r\n+  //   },\r\n+  //   root: './src',\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674041571926,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n // import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n import { defineConfig } from 'vite'\r\n import pugPlugin from 'vite-plugin-pug'\r\n-const options = { pretty: true } // FIXME: pug pretty is deprecated!\r\n-const locals = { name: 'My Pug' }\r\n+\r\n export default defineConfig({\r\n-  plugins: [pugPlugin(options, locals)], //\r\n+  plugins: [pugPlugin()],\r\n+  //\r\n   //   plugins: [vitePugPlugin()],\r\n   //   build: {\r\n   //     rollupOptions: {\r\n   //       input: {\r\n"
+                },
+                {
+                    "date": 1674042271830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n // import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n import { defineConfig } from 'vite'\r\n import pugPlugin from 'vite-plugin-pug'\r\n-\r\n+const options = { localImports: true }\r\n export default defineConfig({\r\n-  plugins: [pugPlugin()],\r\n+  plugins: [pugPlugin(options)],\r\n   //\r\n   //   plugins: [vitePugPlugin()],\r\n   //   build: {\r\n   //     rollupOptions: {\r\n"
+                },
+                {
+                    "date": 1674042524284,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   //         app: './src/index.html', // default\r\n   //       },\r\n   //     },\r\n   //   },\r\n-  //   root: './src',\r\n+  root: './src',\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674042540845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,16 +4,16 @@\n const options = { localImports: true }\r\n export default defineConfig({\r\n   plugins: [pugPlugin(options)],\r\n   //\r\n-  //   plugins: [vitePugPlugin()],\r\n-  //   build: {\r\n-  //     rollupOptions: {\r\n-  //       input: {\r\n-  //         app: './src/index.html', // default\r\n-  //       },\r\n-  //     },\r\n-  //   },\r\n+  plugins: [vitePugPlugin()],\r\n+  build: {\r\n+    rollupOptions: {\r\n+      input: {\r\n+        app: './src/index.html', // default\r\n+      },\r\n+    },\r\n+  },\r\n   root: './src',\r\n   server: {\r\n     // host: true,\r\n   },\r\n"
+                },
+                {
+                    "date": 1674042585556,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,15 @@\n export default defineConfig({\r\n   plugins: [pugPlugin(options)],\r\n   //\r\n   plugins: [vitePugPlugin()],\r\n+  dev: {\r\n+    rollupOptions: {\r\n+      input: {\r\n+        app: './src/index.html', // default\r\n+      },\r\n+    },\r\n+  },\r\n   build: {\r\n     rollupOptions: {\r\n       input: {\r\n         app: './src/index.html', // default\r\n"
+                },
+                {
+                    "date": 1674042611151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,24 +4,17 @@\n const options = { localImports: true }\r\n export default defineConfig({\r\n   plugins: [pugPlugin(options)],\r\n   //\r\n-  plugins: [vitePugPlugin()],\r\n-  dev: {\r\n-    rollupOptions: {\r\n-      input: {\r\n-        app: './src/index.html', // default\r\n-      },\r\n-    },\r\n-  },\r\n-  build: {\r\n-    rollupOptions: {\r\n-      input: {\r\n-        app: './src/index.html', // default\r\n-      },\r\n-    },\r\n-  },\r\n-  root: './src',\r\n+  //   plugins: [vitePugPlugin()],\r\n+  //   build: {\r\n+  //     rollupOptions: {\r\n+  //       input: {\r\n+  //         app: './src/index.html', // default\r\n+  //       },\r\n+  //     },\r\n+  //   },\r\n+  //   root: './src',\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674042622068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n // import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n import { defineConfig } from 'vite'\r\n import pugPlugin from 'vite-plugin-pug'\r\n+\r\n const options = { localImports: true }\r\n+\r\n export default defineConfig({\r\n   plugins: [pugPlugin(options)],\r\n   //\r\n   //   plugins: [vitePugPlugin()],\r\n"
+                },
+                {
+                    "date": 1674042677643,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,9 @@\n   //       },\r\n   //     },\r\n   //   },\r\n   //   root: './src',\r\n+  root: path.join(__dirname, 'src'),\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674042845093,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,10 @@\n \r\n const options = { localImports: true }\r\n \r\n export default defineConfig({\r\n+  base: '',\r\n+  root: 'src',\r\n   plugins: [pugPlugin(options)],\r\n   //\r\n   //   plugins: [vitePugPlugin()],\r\n   //   build: {\r\n@@ -15,9 +17,8 @@\n   //       },\r\n   //     },\r\n   //   },\r\n   //   root: './src',\r\n-  root: path.join(__dirname, 'src'),\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674042874216,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n \r\n export default defineConfig({\r\n   base: '',\r\n   root: 'src',\r\n+  build: {outDir:'../dist'}\r\n   plugins: [pugPlugin(options)],\r\n   //\r\n   //   plugins: [vitePugPlugin()],\r\n   //   build: {\r\n"
+                },
+                {
+                    "date": 1674042949950,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,12 @@\n \r\n export default defineConfig({\r\n   base: '',\r\n   root: 'src',\r\n-  build: {outDir:'../dist'}\r\n+  build: {\r\n+    outDir: '../dist',\r\n+    rollupOptions: { input: 'src' },\r\n+  },\r\n   plugins: [pugPlugin(options)],\r\n   //\r\n   //   plugins: [vitePugPlugin()],\r\n   //   build: {\r\n"
+                },
+                {
+                    "date": 1674043113576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n   base: '',\r\n   root: 'src',\r\n   build: {\r\n     outDir: '../dist',\r\n-    rollupOptions: { input: 'src' },\r\n   },\r\n   plugins: [pugPlugin(options)],\r\n   //\r\n   //   plugins: [vitePugPlugin()],\r\n"
+                },
+                {
+                    "date": 1674043200781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n   //         app: './src/index.html', // default\r\n   //       },\r\n   //     },\r\n   //   },\r\n-  //   root: './src',\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674043409913,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,15 +12,15 @@\n   },\r\n   plugins: [pugPlugin(options)],\r\n   //\r\n   //   plugins: [vitePugPlugin()],\r\n-  //   build: {\r\n-  //     rollupOptions: {\r\n-  //       input: {\r\n-  //         app: './src/index.html', // default\r\n-  //       },\r\n-  //     },\r\n-  //   },\r\n+  build: {\r\n+    rollupOptions: {\r\n+      input: {\r\n+        app: './src/index.html', // default\r\n+      },\r\n+    },\r\n+  },\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674043426198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n   //   plugins: [vitePugPlugin()],\r\n   build: {\r\n     rollupOptions: {\r\n       input: {\r\n-        app: './src/index.html', // default\r\n+        app: '/src/index.html', // default\r\n       },\r\n     },\r\n   },\r\n   server: {\r\n"
+                },
+                {
+                    "date": 1674043541734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,15 +12,15 @@\n   },\r\n   plugins: [pugPlugin(options)],\r\n   //\r\n   //   plugins: [vitePugPlugin()],\r\n-  build: {\r\n-    rollupOptions: {\r\n-      input: {\r\n-        app: '/src/index.html', // default\r\n-      },\r\n-    },\r\n-  },\r\n+  //   build: {\r\n+  //     rollupOptions: {\r\n+  //       input: {\r\n+  //         app: './src/index.html', // default\r\n+  //       },\r\n+  //     },\r\n+  //   },\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674043652774,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,17 +10,8 @@\n   build: {\r\n     outDir: '../dist',\r\n   },\r\n   plugins: [pugPlugin(options)],\r\n-  //\r\n-  //   plugins: [vitePugPlugin()],\r\n-  //   build: {\r\n-  //     rollupOptions: {\r\n-  //       input: {\r\n-  //         app: './src/index.html', // default\r\n-  //       },\r\n-  //     },\r\n-  //   },\r\n   server: {\r\n     // host: true,\r\n   },\r\n })\r\n"
+                },
+                {
+                    "date": 1674043663293,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   root: 'src',\r\n   build: {\r\n     outDir: '../dist',\r\n   },\r\n-  plugins: [pugPlugin(options)],\r\n   server: {\r\n     // host: true,\r\n   },\r\n+  plugins: [pugPlugin(options)],\r\n })\r\n"
+                },
+                {
+                    "date": 1674044468112,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n-// import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n+import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n import { defineConfig } from 'vite'\r\n-import pugPlugin from 'vite-plugin-pug'\r\n+// import pugPlugin from 'vite-plugin-pug'\r\n \r\n const options = { localImports: true }\r\n \r\n export default defineConfig({\r\n@@ -12,6 +12,7 @@\n   },\r\n   server: {\r\n     // host: true,\r\n   },\r\n-  plugins: [pugPlugin(options)],\r\n+  plugins: [vitePugPlugin()],\r\n+  // plugins: [pugPlugin(options)],\r\n })\r\n"
+                },
+                {
+                    "date": 1674044621274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n-import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n import { defineConfig } from 'vite'\r\n-// import pugPlugin from 'vite-plugin-pug'\r\n+// import vitePugPlugin from 'vite-plugin-pug-transformer'\r\n+import pugPlugin from 'vite-plugin-pug'\r\n \r\n const options = { localImports: true }\r\n \r\n export default defineConfig({\r\n@@ -12,7 +12,7 @@\n   },\r\n   server: {\r\n     // host: true,\r\n   },\r\n-  plugins: [vitePugPlugin()],\r\n-  // plugins: [pugPlugin(options)],\r\n+  // plugins: [vitePugPlugin()],\r\n+  plugins: [pugPlugin(options)],\r\n })\r\n"
+                }
+            ],
+            "date": 1674035438800,
+            "name": "Commit-0",
+            "content": "import vitePugPlugin from 'vite-plugin-pug-transformer'\r\nimport { defineConfig } from 'vite'\r\n\r\nexport default defineConfig({\r\n  plugins: [vitePugPlugin()],\r\n\r\n  server: {\r\n    // host: true,\r\n  },\r\n})\r\n"
+        }
+    ]
+}

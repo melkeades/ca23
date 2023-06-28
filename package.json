@@ -1,0 +1,22 @@
+{
+  "name": "ca23",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build src",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@studio-freight/lenis": "^0.2.28",
+    "gsap": "^3.11.4",
+    "jquery": "^3.6.3",
+    "pug": "^3.0.2",
+    "split-type": "^0.3.3",
+    "stylus": "^0.59.0",
+    "vite": "^4.0.0",
+    "vite-plugin-pug": "^0.3.2",
+    "vite-plugin-pug-transformer": "^1.0.3"
+  }
+}

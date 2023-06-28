@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/fonts.styl",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1674079004220,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1674079004220,
+            "name": "Commit-0",
+            "content": "@font-face\r\n    font-family 'Sofia Pro'\r\n    src url('../fonts/SofiaProLight.ttf') format('truetype')\r\n    font-weight 300\r\n    font-style normal\r\n    font-display swap\r\n\r\n@font-face\r\n    font-family 'Sofia Pro'\r\n    src url('../fonts/SofiaProBold.ttf') format('truetype')\r\n    font-weight 700\r\n    font-style normal\r\n    font-display swap\r\n\r\n@font-face\r\n    font-family 'Sofia Pro'\r\n    src url('../fonts/SofiaProMedium-Italic.ttf') format('truetype')\r\n    font-weight 500\r\n    font-style italic\r\n    font-display swap\r\n\r\n@font-face\r\n    font-family 'Sofia Pro'\r\n    src url('../fonts/SofiaProRegular-Italic.ttf') format('truetype')\r\n    font-weight 400\r\n    font-style italic\r\n    font-display swap\r\n\r\n@font-face\r\n    font-family 'Sofia Pro'\r\n    src url('../fonts/SofiaProBold-Italic.ttf') format('truetype')\r\n    font-weight 700\r\n    font-style italic\r\n    font-display swap\r\n\r\n@font-face\r\n    font-family 'Sofia Pro'\r\n    src url('../fonts/SofiaProMedium.ttf') format('truetype')\r\n    font-weight 500\r\n    font-style normal\r\n    font-display swap\r\n\r\n@font-face\r\n    font-family 'Sofia Pro'\r\n    src url('../fonts/SofiaProRegular.ttf') format('truetype')\r\n    font-weight 400\r\n    font-style normal\r\n    font-display swap\r\n\r\n@font-face\r\n    font-family 'Sofia Pro'\r\n    src url('../fonts/SofiaProSemiBold.ttf') format('truetype')\r\n    font-weight 600\r\n    font-style normal\r\n    font-display swap\r\n\r\n@font-face\r\n    font-family 'Sofia Pro'\r\n    src url('../fonts/SofiaProSemiBold-Italic.ttf') format('truetype')\r\n    font-weight 600\r\n    font-style italic\r\n    font-display swap\r\n\r\n@font-face\r\n    font-family 'Sofia Pro'\r\n    src url('../fonts/SofiaProLight-Italic.ttf') format('truetype')\r\n    font-weight 300\r\n    font-style italic\r\n    font-display swap\r\n\r\n@font-face\r\n    font-family 'Materialdesignicons webfont'\r\n    src url('../fonts/materialdesignicons-webfont.ttf') format('truetype')\r\n    font-weight 400\r\n    font-style normal\r\n    font-display swap\r\n"
+        }
+    ]
+}

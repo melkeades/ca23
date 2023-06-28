@@ -1,0 +1,50 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1674041182858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1674041622224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n   </head>\n   <body>\n     sdf\n     <script type=\"module\" src=\"/main.js\"></script>\n-   <pug src=\"/home1.pug\" />\n+    <pug src=\"/home1.pug\" />\n     <!-- <template data-type=\"pug\" class=\"pug\" data-src=\"/home1.pug\"></template> -->\n-src=\"/home1.pug\"></template>\n   </body>\n </html>\n"
+                },
+                {
+                    "date": 1674041653685,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n   </head>\n   <body>\n     sdf\n     <script type=\"module\" src=\"/main.js\"></script>\n-    <pug src=\"/home1.pug\" />\n+    <pug src=\"home1.pug\" />\n     <!-- <template data-type=\"pug\" class=\"pug\" data-src=\"/home1.pug\"></template> -->\n   </body>\n </html>\n"
+                },
+                {
+                    "date": 1674042385328,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     <title>Homepage</title>\n   </head>\n   <body>\n     sdf\n-    <script type=\"module\" src=\"/main.js\"></script>\n+    <script type=\"module\" src=\"main.js\"></script>\n     <pug src=\"home1.pug\" />\n     <!-- <template data-type=\"pug\" class=\"pug\" data-src=\"/home1.pug\"></template> -->\n   </body>\n </html>\n"
+                },
+                {
+                    "date": 1674042412548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n   </head>\n   <body>\n     sdf\n     <script type=\"module\" src=\"main.js\"></script>\n-    <pug src=\"home1.pug\" />\n+    <pug src=\"/src/home1.pug\" />\n     <!-- <template data-type=\"pug\" class=\"pug\" data-src=\"/home1.pug\"></template> -->\n   </body>\n </html>\n"
+                },
+                {
+                    "date": 1674042420427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n   </head>\n   <body>\n     sdf\n     <script type=\"module\" src=\"main.js\"></script>\n-    <pug src=\"/src/home1.pug\" />\n+    <pug src=\"home1.pug\" />\n     <!-- <template data-type=\"pug\" class=\"pug\" data-src=\"/home1.pug\"></template> -->\n   </body>\n </html>\n"
+                },
+                {
+                    "date": 1674042432497,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n   </head>\n   <body>\n     sdf\n     <script type=\"module\" src=\"main.js\"></script>\n-    <pug src=\"home1.pug\" />\n+    <pug src=\"/home1.pug\" />\n     <!-- <template data-type=\"pug\" class=\"pug\" data-src=\"/home1.pug\"></template> -->\n   </body>\n </html>\n"
+                },
+                {
+                    "date": 1674042439143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,8 @@\n   </head>\n   <body>\n     sdf\n     <script type=\"module\" src=\"main.js\"></script>\n-    <pug src=\"/home1.pug\" />\n+    <pug src=\"home1.pug\" />\n     <!-- <template data-type=\"pug\" class=\"pug\" data-src=\"/home1.pug\"></template> -->\n   </body>\n </html>\n"
+                },
+                {
+                    "date": 1674042448562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,8 @@\n     <title>Homepage</title>\n   </head>\n   <body>\n     sdf\n-    <script type=\"module\" src=\"main.js\"></script>\n     <pug src=\"home1.pug\" />\n     <!-- <template data-type=\"pug\" class=\"pug\" data-src=\"/home1.pug\"></template> -->\n   </body>\n </html>\n"
+                }
+            ],
+            "date": 1674041182858,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Homepage</title>\n  </head>\n  <body>\n    sdf\n    <script type=\"module\" src=\"/main.js\"></script>\n   <pug src=\"/home1.pug\" />\n    <!-- <template data-type=\"pug\" class=\"pug\" data-src=\"/home1.pug\"></template> -->\nsrc=\"/home1.pug\"></template>\n  </body>\n</html>\n"
+        }
+    ]
+}
